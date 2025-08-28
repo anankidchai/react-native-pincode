@@ -195,7 +195,11 @@ class PinCode extends React.PureComponent {
                             marginLeft: marginLeft,
                             marginRight: marginRight,
                             backgroundColor: color
-                        }, this.props.stylePinCodeCircle] }))) || (React.createElement(react_native_1.View, { style: {
+                        }, showError
+                                ? this.props.stylePinCodeCircleError || this.props.stylePinCodeCircle
+                                : (lengthSup && password.length > 0)
+                                    ? this.props.stylePinCodeCircleActive || this.props.stylePinCodeCircle
+                                    : this.props.stylePinCodeCircle] }))) || (React.createElement(react_native_1.View, { style: {
                         left: x,
                         opacity: opacity,
                         marginLeft: marginLeft,

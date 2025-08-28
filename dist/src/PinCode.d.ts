@@ -48,6 +48,7 @@ export interface IProps {
     styleDeleteButtonText?: StyleProp<TextStyle>;
     styleEmptyColumn?: StyleProp<ViewStyle>;
     stylePinCodeCircle?: StyleProp<ViewStyle>;
+    stylePinCodeCircleActive?: StyleProp<ViewStyle>;
     styleRowButtons?: StyleProp<ViewStyle>;
     styleTextButton?: StyleProp<TextStyle>;
     styleTextSubtitle?: StyleProp<TextStyle>;
